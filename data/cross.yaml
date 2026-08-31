@@ -1,0 +1,22 @@
+crosstype: risib
+#risib = recomibinant inbred lines by sib mating
+#Tells algorithim to only epect homozygous genotypes
+geno: geno.csv
+#Matches strains with markers
+pheno: pheno.csv
+#Matches strains with phenotypes strain averages
+#Removed animal ID column from file
+gmap: marker_map.csv
+#Marker file - marker, chromosome, position
+alleles:
+- A
+- B
+#Allele names
+genotypes:
+  A: 1
+  B: 2
+#Algorithim will save alleles as these numbers
+na.strings:
+- '-'
+- NA
+#What counts as missing data - any cell containing these will be treated as unknown genotype
